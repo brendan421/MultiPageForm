@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Multipage Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mars Flight Booking Form (one-way)</h1>
+      <table>
+        <tr>
+          <td class="tab">
+            <div class="filler filler-top"></div>
+            <div class="tab-item tab-selected" id="tab-item-1">Name</div>
+            <div class="filler"></div>
+            <div class="tab-item" id="tab-item-2">Contact</div>
+            <div class="filler"></div>
+            <div class="tab-item" id="tab-item-3">Reason</div>
+            <div class="filler"></div>
+            <div class="tab-item" id="tab-item-4">Waiver</div>
+            <div class="filler filler-bottom"></div>
+          </td>
+          <td class="sub-form">
+            <div class="bc_formbox hide-form" id="form-page-1">
+              <form class="form">
+                <p>
+                  Trip of a life time. Build an enternal bond with your
+                  crewmates. One year weightless clinically proven to resolve
+                  joint issues.
+                </p>
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Enter your name" />
+                </div>
+                <div class="form-control">
+                  <label for="zip-code">Zip Code</label>
+                  <input type="text" id="zip-code" placeholder="Zip Code" />
+                </div>
+              </form>
+            </div>
+            <div class="bc_formbox hide-form" id="form-page-2">
+              <form class="form">
+                <div class="form-control">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" placeholder="Phone" />
+                </div>
+              </form>
+            </div>
+            <div class="bc_formbox hide-form" id="form-page-3">
+              <form class="form">
+                <div class="form-control">
+                  <label for="reason">Why do you want to take this trip</label>
+                  <textarea
+                    name="message"
+                    rows="10"
+                    cols="50"
+                    id="reason"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="bc_formbox" id="form-page-4">
+              <form class="form">
+                <p>
+                  The organisers accept no liability for any incidents occuring
+                  during the journey nor during your time on Mars. Food and
+                  accommodation will be provided for the journey and the first
+                  year at Capricorn base. The organisers provide no guarantee of
+                  a place on a return space craft.
+                </p>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="accept-conditions"
+                    id="accept-conditions"
+                  />
+                  <label>I accept these conditions</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="accept-payment"
+                    id="accept-payment"
+                  />
+                  <label
+                    >I agree to pay a non refundable $100,000 fee for induction
+                    to the 2025 Mars departure</label
+                  >
+                </div>
+              </form>
+            </div>
+            <small class="error-message" id="error-message"></small>
+            <div class="button-row">
+              <button class="back-button" id="back-button">Back</button>
+              <button class="next-button" id="next-button">Next</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(77, 165, 145);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(214, 188, 188);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  background-color: rgb(21, 166, 233);
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.tab {
+  width: 100px;
+  margin-top: 0;
+}
+
+.tab-item {
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px 0px 20px 5px;
+  background-color: darkgray;
+
+  height: 60px;
+}
+
+.filler {
+  background-color: darkgray;
+  height: 5px;
+
+  border-right: solid 2px gray;
+}
+
+.filler-top {
+  height: 15px;
+}
+
+.filler-bottom {
+  height: 15px;
+}
+
+.sub-form {
+  width: 400px;
+  background-color: rgb(144, 233, 248);
+  border-top: solid 2px gray;
+  border-right: solid 2px gray;
+  border-bottom: solid 2px gray;
+
+  padding-left: -2px;
+}
+
+.tab-selected {
+  background-color: rgb(144, 233, 248);
+  border-left: solid 2px gray;
+  border-top: solid 2px gray;
+  border-bottom: solid 2px gray;
+}
+
+.tab-unselected {
+  border-right: solid 2px gray;
+}
+
+form p {
+  margin-top: 0;
+}
+
+.bc_formbox {
+  height: 230px;
+  margin: 5px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  color: #777777;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  border: solid 2px #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777777;
+}
+
+.error-message {
+  color: rgb(250, 71, 59);
+  display: block;
+  height: 20px;
+  font-size: 15px;
+
+  font-weight: bold;
+}
+
+.hide-form {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  visibility: hidden;
+}
+
+.back-button {
+  margin-left: 20px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.next-button {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.hide-button {
+  visibility: hidden;
+}
